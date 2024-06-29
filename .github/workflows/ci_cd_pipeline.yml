@@ -19,7 +19,7 @@ on:
         required: true
       S3_ORIGIN_BUCKET:
         required: true
-      SONAR_TOKEN:
+      SONAR_TOKEN_VUE_APP:
         required: true
     
 jobs:
