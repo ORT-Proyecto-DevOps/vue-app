@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build-dev:
-    uses: ORT-Proyecto-DevOps/vue-app/.github/workflows/ci_cd_pipeline@develop
+    uses: ORT-Proyecto-DevOps/vue-app/.github/workflows/ci_cd_pipeline.yml@develop
     with:
       CI_ENV: develop
       CONTENTFUL_ENVIRONMENT: 'develop'

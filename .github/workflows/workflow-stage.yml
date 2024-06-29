@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build-dev:
-    uses: ORT-Proyecto-DevOps/vue-app/.github/workflows/ci_cd_pipeline@staging
+    uses: ORT-Proyecto-DevOps/vue-app/.github/workflows/ci_cd_pipeline.yml@staging
     with:
       CI_ENV: staging
       CONTENTFUL_ENVIRONMENT: 'staging'
