@@ -19,6 +19,8 @@ on:
         required: true
       S3_ORIGIN_BUCKET:
         required: true
+      SONAR_TOKEN:
+        required: true
     
 jobs:
   build:
