@@ -8,6 +8,6 @@ export COMMIT_DATE="$(git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty="%cd" -
 #### Print Environment Variables ####
 printenv
 
-rm -rf ./out
+rm -rf ./dist
 
 npm run build
