@@ -46,9 +46,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
+       
+      - name: Install dependencies vue
+        run: npm install vue
         
       - name: Build NextJS static site
         run: ./.github/scripts/build.sh
