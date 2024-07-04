@@ -1,4 +1,4 @@
-name: CI_CD
+name: Github Action Workflow CI/CD
 on:
   workflow_call:
     inputs:
