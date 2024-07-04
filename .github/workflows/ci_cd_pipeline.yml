@@ -58,7 +58,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    needs: [setup_node]
+    needs: [setup_node, sonarcloud]  # Necesita tanto setup_node como sonarcloud
 
     steps:
       - uses: actions/checkout@v3
@@ -73,7 +73,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [build]  # Necesita el build
 
     steps:
       - uses: actions/checkout@v3
