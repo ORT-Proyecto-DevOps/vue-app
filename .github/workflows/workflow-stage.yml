@@ -6,7 +6,7 @@ on:
       - staging
   repository_dispatch:
     types:
-      - build-stage
+      - ci-cd-stg
   workflow_dispatch:
 
 concurrency:
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-dev:
+  ci-cd-stg:
     uses: ORT-Proyecto-DevOps/vue-app/.github/workflows/ci_cd_pipeline.yml@staging
     with:
       CI_ENV: staging

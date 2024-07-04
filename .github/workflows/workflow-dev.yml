@@ -6,7 +6,7 @@ on:
       - develop
   repository_dispatch:
     types:
-      - build-dev
+      - ci-cd-dev
   workflow_dispatch:
 
 concurrency:
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-dev:
+  ci-cd-dev:
     uses: ORT-Proyecto-DevOps/vue-app/.github/workflows/ci_cd_pipeline.yml@develop
     with:
       CI_ENV: develop
